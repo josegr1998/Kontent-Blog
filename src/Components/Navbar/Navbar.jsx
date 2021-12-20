@@ -39,8 +39,24 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {showLinks && (
-        <div className={styles.linksContainer}>
+      {
+        <div
+          className={styles.linksContainer}
+          style={
+            !showLinks
+              ? {
+                  transform: " translateX(100%)",
+                  height: "0rem",
+                  zIndex: "0",
+                }
+              : {
+                  transform: " translateX(0%)",
+                  zIndex: "1000",
+                  display: "flex",
+                  width: "100%",
+                }
+          }
+        >
           {nav &&
             links.map((link) => {
               return link.value === "Home" ? (
@@ -48,11 +64,16 @@ const Navbar = () => {
                   {link.value}{" "}
                 </Link>
               ) : (
-                <Link to={`/${link.value.toLowerCase()}`}>{link.value}</Link>
+                <Link
+                  to={`/${link.value.toLowerCase()}`}
+                  onClick={() => setShowLinks(false)}
+                >
+                  {link.value}
+                </Link>
               );
             })}
         </div>
-      )}
+      }
     </>
   );
 };

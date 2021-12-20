@@ -1,0 +1,25 @@
+.postsContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 80vw;
+}
+.singlePost {
+  margin-bottom: 4rem;
+}
+.pageTitle {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.postTitle {
+  margin-bottom: 2rem;
+}
+
+.imageContainer {
+  margin-bottom: 2rem;
+}
+.container {
+  min-height: calc(100vh - 14rem);
+  margin-top: 6rem;
+}

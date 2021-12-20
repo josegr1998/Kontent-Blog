@@ -11,6 +11,7 @@ const SingleArticle = () => {
 
   const fetchSingleProduct = async (slug) => {
     await fetchDataById(slug).then((res) => {
+      console.log(res);
       setSingleArticle(res.data.items[0].elements);
     });
   };

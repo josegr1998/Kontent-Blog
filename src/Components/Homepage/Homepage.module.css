@@ -3,6 +3,8 @@
   max-width: 1200px;
   padding: 1rem;
   margin: 0 auto;
+  min-height: calc(100vh - 10rem);
+  margin-top: 4rem;
 }
 .mainTitle {
   margin: 2rem auto;
