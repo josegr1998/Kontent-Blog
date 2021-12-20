@@ -30,9 +30,15 @@
 .btn {
   display: block;
   text-decoration: none;
-  color: blueviolet;
+  color: coral;
   margin: 0 auto;
   width: 7rem;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  cursor: pointer;
+  color: black;
 }
 
 @media screen and (min-width: 1100px) {

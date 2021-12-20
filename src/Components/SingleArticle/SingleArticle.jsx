@@ -9,16 +9,15 @@ const SingleArticle = () => {
 
   const [singleArticle, setSingleArticle] = useState("");
 
-  const fetchSingleProduct = async (slug) => {
+  const getSingleProduct = async (slug) => {
     await fetchDataById(slug).then((res) => {
-      console.log(res);
       setSingleArticle(res.data.items[0].elements);
     });
   };
 
   console.log(singleArticle);
   useEffect(() => {
-    fetchSingleProduct(slug);
+    getSingleProduct(slug);
   }, [slug]);
 
   if (singleArticle) {
