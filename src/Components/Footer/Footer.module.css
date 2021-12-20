@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  place-items: center;
+  color: white;
+  background-color: black;
+  height: 6rem;
+  text-align: center;
+}
+
+.infoContainer {
+  display: flex;
+  gap: 3rem;
+}

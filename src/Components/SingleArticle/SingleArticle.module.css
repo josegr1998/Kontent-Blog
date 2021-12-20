@@ -1,0 +1,49 @@
+.container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.title {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.imageContainer {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.desc {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.relatedPosts {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.relatedArticleTitle {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: coral;
+}
+
+.relatedArticlesContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.relatedTitle {
+  margin-bottom: 2rem;
+}
+
+.viewLink {
+  margin-top: 1rem;
+  display: block;
+  text-decoration: none;
+  color: coral;
+  font-size: 1.2rem;
+}
